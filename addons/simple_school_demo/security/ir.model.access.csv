@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_school_model,school.model,model_school_model,,1,1,1,1
+access_session_model,session.model,model_session_model,,1,1,1,1
+access_session_model_line,session.model.line,model_session_model_line,,1,1,1,1
+access_attendance_model,attendance.model,model_attendance_model,,1,1,1,1
+access_attendance_model_line,attendance.model.line,model_attendance_model_line,,1,1,1,1
+access_leave_studentrequest,leave.studentrequest,model_leave_studentrequest,,1,1,1,1
+access_student_leave,student.leave,model_student_leave,,1,1,1,1

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_section_tree" model="ir.ui.view">
+        <field name="name">view.section.tree</field>
+        <field name="model">session.model</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="head_teacher_id" domain="[('teacher_role','=','teacher_head')]"/>
+                <field name="section" />
+                <field name="child_id" />
+            </tree>
+        </field>
+    </record>
+    <record id="view_section_form" model="ir.ui.view">
+        <field name="name">view.session.form</field>
+        <field name="model">session.model</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <separator string="Academic Section"/>
+                    <group>
+                        <group>
+                            <field name="head_teacher_id" domain="[('teacher_role','=','teacher_head')]"/>
+                            <field name="section" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="student" string="Section's Student">
+                            <field name="child_id">
+                                <tree editable="bottom" string="Section's Student">
+                                    <field name="student_id" domain="[('role','=','student')]" />
+                                    <field name="roll_no" />
+                                </tree> 
+                                <form>
+                                    <group>
+                                        <field name="student_id"/>
+                                        <field name="roll_no" />
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="session_action" model="ir.actions.act_window">
+        <field name="name">Section</field>
+        <field name="res_model">session.model</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem
+        id="menu_session_panel"
+        name="Section"
+        action="session_action"
+        parent="menu_school_root"
+        sequence="5"/>
+</odoo>
