@@ -1,1 +1,0 @@
-from . import wizard_monthly_attendance

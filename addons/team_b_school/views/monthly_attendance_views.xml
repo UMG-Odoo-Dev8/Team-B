@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_monthly_attendance_tree" model="ir.ui.view">
+        <field name="name">view.monthly.attendance.tree</field>
+        <field name="model">sl.monthly.attendance</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="section_name" />
+                <field name="months" />
+                <field name="report_ids" />
+            </tree>
+        </field>
+    </record>
+    <record id="view_monthly_attendance_form" model="ir.ui.view">
+        <field name="name">view.monthly.attendance.form</field>
+        <field name="model">sl.monthly.attendance</field>
+        <field name="arch" type="xml">
+            <form string="Monthly Attendance Report">
+                <sheet>
+                    <group>
+                        <group string="Academic Section">
+                            <field name="section_name" />
+                        </group>
+                        <group string="Attendance Month">
+                            <field name="months" />
+                        </group>
+                    </group>
+                    <notebook>
+                    <page name="mon_att" string="Monthly Attendance">
+                        <field name="report_ids">
+                            <tree editable="bottom">
+                                <field name="roll_no" />
+                                <field name="student_name" />
+                                <field name="total_attendance" />
+                                <field name="attendance_percent" widget="percentage"/>
+                                <field name="for_exam"/>
+                            </tree>
+                            <form>
+                                <group string="Percentage">
+                                    <field name="roll_no" />
+                                    <field name="student_name" />
+                                    <field name="total_attendance" />
+                                    <field name="attendance_percent"/>
+                                </group>
+                            </form>
+                        </field>
+                    </page>
+                </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Action for Monthly Attendance Report -->
+    <record id="action_monthly_report" model="ir.actions.act_window">
+        <field name="name">Monthly Attendance</field>
+        <field name="res_model">sl.monthly.attendance</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem
+        id="menu_monthly_attendance"
+        name="Monthly Attendance"
+        action="action_monthly_report"
+        parent="menu_attendance"
+        sequence="5"/>
+
+</odoo>

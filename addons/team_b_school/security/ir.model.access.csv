@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sl_school,sl.school,model_sl_school,,1,1,1,1
+access_sl_section,sl.section,model_sl_section,,1,1,1,1
+access_sl_section_line,sl.section.line,model_sl_section_line,,1,1,1,1
+access_sl_attendance,sl.attendance,model_sl_attendance,,1,1,1,1
+access_sl_attendance_line,sl.attendance.line,model_sl_attendance_line,,1,1,1,1
+access_sl_monthly_attendance,sl.monthly.attendance,model_sl_monthly_attendance,,1,1,1,1
+access_sl_monthly_attendance_line,sl.monthly.attendance.line,model_sl_monthly_attendance_line,,1,1,1,1

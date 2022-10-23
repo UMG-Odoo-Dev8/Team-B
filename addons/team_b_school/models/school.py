@@ -1,16 +1,17 @@
 from datetime import date
 from email.policy import default
-from socket import TCP_NODELAY
 import string
 from odoo import models,fields,api
 
 class DemoSchool(models.Model):
-    _name = 'school.model'
-    _description = 'School Model'
+    _name = 'sl.school'
+    _description = 'School Information'
 
-    name = fields.Char(string="Full Name", required=True)
-    photo = fields.Binary(string="Profile Picture")
-    role = fields.Selection([('student','Student'),('teacher','Teacher')], string="Role", required=True)
+    name = fields.Char(string="Name", required=True)
+    avatar = fields.Binary(string="Profile Picture :")
+    role = fields.Selection([
+        ('student','Student'),
+        ('teacher','Teacher')], string="Role", required=True, default="student")
     teacher_role = fields.Selection([
         ('principal','Principal'),
         ('teacher','Teacher'),
@@ -18,7 +19,10 @@ class DemoSchool(models.Model):
     father_name = fields.Char(string="Father Name")
     address = fields.Text(string="Address")
     phone_no = fields.Char(string="Phone Number")
-    gender = fields.Selection([('male','Male'),('female','Female'),('other','Other')], string="Gender")
+    gender = fields.Selection([
+        ('male','Male'),
+        ('female','Female'),
+        ('other','Other')], string="Gender")
     dob = fields.Date(string="Date of Birth")
     age = fields.Integer(string="Age", compute="_compute_age")
 
