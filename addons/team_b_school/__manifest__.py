@@ -17,7 +17,10 @@
         'views/school_views.xml',
         'views/section_views.xml',
         'views/attendance_views.xml',
-        'views/monthly_attendance_views.xml'
+        'views/monthly_attendance_views.xml',
+        'views/major_views.xml',
+        'views/question_views.xml',
+        'views/exam_views.xml'
     ],
     'auto_install' : False
 }

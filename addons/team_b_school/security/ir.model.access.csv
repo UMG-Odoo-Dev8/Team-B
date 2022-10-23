@@ -6,3 +6,8 @@ access_sl_attendance,sl.attendance,model_sl_attendance,,1,1,1,1
 access_sl_attendance_line,sl.attendance.line,model_sl_attendance_line,,1,1,1,1
 access_sl_monthly_attendance,sl.monthly.attendance,model_sl_monthly_attendance,,1,1,1,1
 access_sl_monthly_attendance_line,sl.monthly.attendance.line,model_sl_monthly_attendance_line,,1,1,1,1
+access_sl_major,sl.major,model_sl_major,,1,1,1,1
+access_sl_question,sl.question,model_sl_question,,1,1,1,1
+access_sl_question_line,sl.question.line,model_sl_question_line,,1,1,1,1
+access_sl_exam,sl.exam,model_sl_exam,,1,1,1,1
+access_sl_exam_line,sl.exam.line,model_sl_exam_line,,1,1,1,1
