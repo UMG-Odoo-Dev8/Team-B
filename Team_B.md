@@ -21,7 +21,7 @@
     - [Test Exam and Generate Result](#test-exam-and-generate-result)
 
 ## Projcet Overview
-School management system is very convient for checking students' roll-call percentage and also useful  for saving attendance records for each student and test exams.<br>
+School management system is very convenient for checking students' roll-call percentage and also useful  for saving attendance records for each student and for testing exams.<br>
     Functions of the system:
 - Manage attendance
 - Test Exam
@@ -29,7 +29,7 @@ School management system is very convient for checking students' roll-call perce
 
 ## Custom Module Installation
 To run this system you need to install our custom module in odoo version 15. By clicking install button you can easily access this system.
-
+![install](./image/install.png)
 
 ## Operation
 ### Create Data
@@ -37,9 +37,10 @@ For creating new data, go to ***Our School*** main menu and click *create* butto
 
 ![create data](./image/create.png)
 
-Choose role like teacher or student. If teacher, you can select teacher role like principal, teacher and teacher head.
-
+Choose role like teacher or student. If teacher, you can select teacher role like principal, teacher and teacher head.<br>
+Create new student
 ![create data](./image/create_student.png)
+Create new teacher
 ![create data](./image/create_teacher.png)
 
 Can see data in a group by choosing this options
@@ -78,8 +79,8 @@ Go to > Attendance > Monthly Attendance to view monthly attendance of each secti
 ![monthly attendance](./image/monthly_attendance_create.png)
 
 ### Test Exam and Generate Result
-To answer exam questions go to ***Exam*** menu. Choose course in the status bar. Students whose roll-call precentage is at least 75% can answer exam.
+To answer exam questions go to ***Exam*** menu. Choose subject in the status bar. Students whose roll-call precentage is at least 75% can answer exam.
 ![exam](./image/exam.png)
 
-After selecting course, you can answer questions. And then, click submit button to see your result.
+After selecting subject, you can answer questions. And then, click submit button to see your result.
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
