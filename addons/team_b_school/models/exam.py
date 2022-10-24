@@ -124,7 +124,7 @@ class ExamLine(models.Model):
     _name="sl.exam.line"
     _description="Link to Exam"
 
-    exam_id=fields.Many2one('school.exam')
+    exam_id=fields.Many2one('sl.exam')
 
     question_name=fields.Text("Questions")
     answer=fields.Char()
