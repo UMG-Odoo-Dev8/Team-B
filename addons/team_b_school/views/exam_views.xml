@@ -58,7 +58,7 @@
                         <div>
                             <group string="Student Information">
                                 <field name="student_id" string="Student Name:"
-                                placeholder="Choose your name..."/>
+                                placeholder="Choose your name..." />
                             </group>
                             <group>
                                 <group>

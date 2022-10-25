@@ -24,7 +24,7 @@
                 <field name="address" />
                 <field name="phone_no" optional="hide" />
                 <field name="role" optional="show" decoration-success="role=='student'"
-                    decoration-info="'role==teacher'" widget="badge"/>   
+                    decoration-info="role=='teacher'" widget="badge"/>   
             </tree>
         </field>
     </record>

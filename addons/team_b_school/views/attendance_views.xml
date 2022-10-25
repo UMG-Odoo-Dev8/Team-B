@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
+    <record id="view_attendance_search" model="ir.ui.view">
+        <field name="name">view.attendance.search</field>
+        <field name="model">sl.attendance</field>
+        <field name="arch" type="xml">
+            <search string="Search for">
+            <field name="attendance_date" />
+            <separator/>
+                    <filter name="date" string="By Date" domain="[]" context="{'group_by': 'attendance_date'}" />
+            </search>
+        </field>
+    </record>
+
     <!-- Tree view of Attendance Sheet Information -->
     <record id="view_attendance_tree" model="ir.ui.view">
         <field name="name">view.attendance.tree</field>

@@ -19,9 +19,9 @@ class ExamModel(models.Model):
         ('September','September'),
         ('October','October'),
         ('November','November'),
-        ('December','December')],default="January",string="Month",required=True,store=True)
+        ('December','December')],string="Month",required=True,store=True)
 
-    student_id=fields.Many2one('sl.monthly.attendance.line',string="Student Name",domain="[('for_exam','=','Accessed'),('report_id.months','=', monthly)]") #for student name    
+    student_id=fields.Many2one('sl.monthly.attendance.line',string="Student Name",required=True, domain="[('for_exam','=','Accessed'),('report_id.months','=', monthly)]") #for student name    
     student_roll=fields.Char(string='Roll Number',readonly=True)
     section=fields.Char(string='Section',readonly=True)
 
