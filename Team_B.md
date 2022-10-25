@@ -81,6 +81,8 @@ Go to > Attendance > Monthly Attendance to view monthly attendance of each secti
 ### Test Exam and Generate Result
 To answer exam questions go to ***Exam*** menu. Choose subject in the status bar. Students whose roll-call precentage is at least 75% can answer exam.
 ![exam](./image/exam.png)
+![exam](./image/exam-fill.PNG)
 
 After selecting subject, you can answer questions. And then, click submit button to see your result.
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![exam](./image/exam-fail.PNG)
+![exam](./image/exam-pass.PNG)
